@@ -9,7 +9,7 @@ docker build . -t utrecht
 ### Run the Docker
 docker run -it utrecht
 
-### Start the MQTT client
+Start the MQTT client
 ros2 launch mqtt-client standalone.launch.ros2.xml params_file:=/root/documents/bridge.yaml &
 
 ## Sending and receiving ROS messages
