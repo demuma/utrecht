@@ -1,0 +1,52 @@
+/**/*:
+  ros__parameters:
+    broker:
+      host: cow.rmq2.cloudamqp.com
+      port: 8883
+      user: 'kaimuwuu:kaimuwuu'
+      pass: MyBMKJtm2xockRjyXsGg065bNskGDPcI
+      tls:
+        enabled: true
+    client:
+      keep_alive_interval: 25.0
+    bridge:
+      ros2mqtt:
+        ros_topics:
+          - /robotic_arm/hydraulic_pump_throttle
+          - /robotic_arm/hydraulic_servo_1
+          - /robotic_arm/hydraulic_servo_2
+          - /robotic_arm/hydraulic_servo_3
+          - /robotic_arm/hydraulic_servo_4
+          - /robotic_arm/hydraulic_servo_5
+        /robotic_arm/hydraulic_pump_throttle:
+          mqtt_topic: robotic_arm/hydraulic_pump_throttle
+        /robotic_arm/hydraulic_servo_1:
+          mqtt_topic: robotic_arm/hydraulic_servo_1
+        /robotic_arm/hydraulic_servo_2:
+          mqtt_topic: robotic_arm/hydraulic_servo_2
+        /robotic_arm/hydraulic_servo_3:
+          mqtt_topic: robotic_arm/hydraulic_servo_3
+        /robotic_arm/hydraulic_servo_4:
+          mqtt_topic: robotic_arm/hydraulic_servo_4
+        /robotic_arm/hydraulic_servo_5:
+          mqtt_topic: robotic_arm/hydraulic_servo_5
+      mqtt2ros:
+        mqtt_topics:
+          - telemetry/buttons
+          - telemetry/gamma
+          - telemetry/beta_1
+          - telemetry/beta_2
+          - telemetry/beta_3
+          - telemetry/temperature
+        telemetry/buttons:
+          ros_topic: /telemetry/buttons
+        telemetry/gamma:
+          ros_topic: /telemetry/gamma
+        telemetry/beta_1:
+          ros_topic: /telemetry/beta_1
+        telemetry/beta_2:
+          ros_topic: /telemetry/beta_2
+        telemetry/beta_3:
+          ros_topic: /telemetry/beta_3
+        telemetry/temperature:
+          ros_topic: /telemetry/temperature
