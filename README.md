@@ -23,7 +23,7 @@ ros2 topic pub /robotic_arm/hydraulic_servo_1 std_msgs/msg/Float32 "data: 1050" 
 ros2 topic pub /robotic_arm/hydraulic_servo_2 std_msgs/msg/Float32 "data: 1050" -1
 ros2 topic pub /robotic_arm/hydraulic_servo_3 std_msgs/msg/Float32 "data: 1050" -1
 
-### Re-entering the Docker container
+## Re-entering the Docker container
 #### Show all last container IDs
 docker ps -a
 
