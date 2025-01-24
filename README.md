@@ -4,6 +4,7 @@
 git clone https://github.com/demuma/utrecht
 
 #### Build the Docker image
+cd utrecht
 docker build . -t utrecht
 
 #### Run the Docker
