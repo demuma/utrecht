@@ -4,7 +4,7 @@
 git clone https://github.com/demuma/utrecht
 
 #### Build the Docker image
-cd utrecht
+cd utrecht\
 docker build . -t utrecht
 
 #### Run the Docker
@@ -21,7 +21,7 @@ ros2 topic pub /robotic_arm/hydraulic_pump_throttle std_msgs/msg/Float32 "data: 
 ros2 topic pub /robotic_arm/hydraulic_servo_1 std_msgs/msg/Float32 "data: 1050" -1
 
 ### Example 3: Move servo 2 and 3 continuously
-ros2 topic pub /robotic_arm/hydraulic_servo_2 std_msgs/msg/Float32 "data: 1050" -1 \
+ros2 topic pub /robotic_arm/hydraulic_servo_2 std_msgs/msg/Float32 "data: 1050" -1\
 ros2 topic pub /robotic_arm/hydraulic_servo_3 std_msgs/msg/Float32 "data: 1050" -1
 
 ## Re-entering the Docker container
