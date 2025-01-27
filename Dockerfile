@@ -6,3 +6,4 @@ RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 RUN mkdir /root/Documents
 COPY bridge.yaml /root/Documents/bridge.yaml
 COPY simulation.py /root/Documents/simulation.py
+COPY push_button_1.py /root/Documents/push_button_1.py
