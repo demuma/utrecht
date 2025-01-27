@@ -19,7 +19,7 @@ docker run -it \
     utrecht
 
 #### Start the MQTT client
-ros2 launch mqtt-client standalone.launch.ros2.xml params_file:=/root/Documents/bridge.yaml &
+ros2 launch mqtt_client standalone.launch.ros2.xml params_file:=/root/Documents/bridge.yaml &
 
 ## Sending and receiving ROS messages
 ### Example 1: Set hydraulic pump trottle to full
