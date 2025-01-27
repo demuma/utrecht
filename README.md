@@ -35,6 +35,10 @@ ros2 topic pub /robotic_arm/hydraulic_servo_3 std_msgs/msg/Float32 "data: 1050" 
 ros2 topic echo /telemetry/beta2 --once
 ros2 topic echo /telemetry/beta3 --once
 
+### Example 4: Use the provided Python script
+cd /root/Documements\
+python push_button_1.py
+
 ## Re-entering the Docker container
 #### Show all last container IDs
 docker ps -a
