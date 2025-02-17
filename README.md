@@ -7,7 +7,7 @@ git clone https://github.com/demuma/utrecht
 
 #### Build the Docker image
 ```bash
-cd utrecht\
+cd utrecht
 docker build . -t utrecht
 ```
 
@@ -18,11 +18,11 @@ docker run -it utrecht
 
 #### Run the Docker with X11
 ```bash
-docker run -it \
-    --env="DISPLAY=$DISPLAY" \
-    --env="QT_X11_NO_MITSHM=1" \
-    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-    --network=host \
+docker run -it
+    --env="DISPLAY=$DISPLAY"
+    --env="QT_X11_NO_MITSHM=1"
+    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" 
+    --network=host
     utrecht
 ```
 
@@ -39,13 +39,13 @@ ros2 topic pub /robotic_arm/hydraulic_pump_throttle std_msgs/msg/Float32 "data: 
 
 ### Example 2: Move servo 1 continuously and get angle
 ```bash
-ros2 topic pub /robotic_arm/hydraulic_servo_1 std_msgs/msg/Float32 "data: 1050" -1\
+ros2 topic pub /robotic_arm/hydraulic_servo_1 std_msgs/msg/Float32 "data: 1050" -1
 ros2 topic echo /telemetry/beta1
 ```
 
 ### Example 3: Move servo 2 and 3 continuously
 ```bash
-ros2 topic pub /robotic_arm/hydraulic_servo_2 std_msgs/msg/Float32 "data: 1050" -1\
+ros2 topic pub /robotic_arm/hydraulic_servo_2 std_msgs/msg/Float32 "data: 1050" -1
 ros2 topic pub /robotic_arm/hydraulic_servo_3 std_msgs/msg/Float32 "data: 1050" -1
 ros2 topic echo /telemetry/beta2 --once
 ros2 topic echo /telemetry/beta3 --once
@@ -53,7 +53,7 @@ ros2 topic echo /telemetry/beta3 --once
 
 ### Example 4: Use the provided Python script
 ```bash
-cd /root/Documements\
+cd /root/Documements
 python push_button_1.py
 ```
 
